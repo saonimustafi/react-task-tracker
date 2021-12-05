@@ -3,7 +3,7 @@ import Header from "./components/Header"
 import Tasks from "./components/Tasks"
 
 const App = () => {
-  const [tasks, setTasks] = useState([
+  const [tasks, setTasks] = useState ([
     {
         id: 1,
         text: 'Doctor Appointment',
@@ -19,7 +19,7 @@ const App = () => {
     {
         id: 3,
         text: "Shopping",
-        day: 'Feb 7th at 2:30pm',
+        day: 'Feb 5th at 2:30pm',
         reminder: false,
     }
 ])
@@ -30,7 +30,6 @@ const App = () => {
     </div>
   )
 }
-
 
 
 export default App
