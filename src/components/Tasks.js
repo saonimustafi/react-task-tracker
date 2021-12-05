@@ -1,21 +1,11 @@
-const tasks = [
-    {
-        text: "Task1"
-    },
-    {
-        text: "Task2"
-    },
-    {
-        text: "Task3"
-    }
-]
 
-const Tasks = () => {
+
+const Tasks = ({ tasks }) => {
     return (
         <>
           {
               tasks.map((task) => (
-                  <h3>{task.text}</h3>
+                  <h3 key={task.id}>{task.text}</h3>
               ))
           }  
         </>
